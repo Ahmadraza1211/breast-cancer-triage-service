@@ -1,0 +1,14 @@
+seed: 42
+test_size: 0.2
+cv_folds: 5
+min_test_recall: 0.95
+
+models:
+  logistic_regression:
+    C: 0.1
+    class_weight: "balanced"
+    max_iter: 1000
+    solver: "lbfgs"
+  random_forest:
+    n_estimators: 100
+    max_depth: 5
